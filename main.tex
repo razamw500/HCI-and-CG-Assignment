@@ -1,0 +1,87 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{graphicx}
+\usepackage{grffile} % handles spaces and special characters in filenames safely
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+
+% --- Styling & Theme ---
+\definecolor{primary}{RGB}{24, 76, 120}
+\definecolor{secondary}{RGB}{90, 90, 90}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    urlcolor=primary
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small\textcolor{secondary}{HCI \& Computer Graphics Assignment}}
+\lhead{\small\textcolor{secondary}{Department of Computer Science \& Engineering}}
+\rfoot{\small Page \thepage}
+
+\titleformat{\section}{\large\bfseries\color{primary}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries\color{secondary}}{}{0em}{}
+
+\begin{document}
+
+% --- Header / Metadata ---
+\begin{center}
+    {\LARGE \bfseries HCI \& CG Assignment} \\[1.2em]
+    \begin{tabular}{rl}
+        \textbf{Name:} & Raza E Mustafa \\
+        \textbf{Roll No:} & 2K24/CSE/122 \\
+        \textbf{Subject:} & HCI \& Computer Graphics \\
+        \textbf{Submitted To:} & Sir Rajesh Kumar \\
+    \end{tabular}
+\end{center}
+
+\vspace{0.8em}
+\hrule
+\vspace{1.2em}
+
+% --- Section 1 ---
+\section*{Human-Computer Interaction (HCI)}
+
+\begin{center}
+    % "HCI image 1" filename with double quotes to support space in filename
+    \includegraphics[width=0.92\linewidth]{"HCI image 1"}
+\end{center}
+
+\subsection*{Description:}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item \textbf{Search Bar:} Helps users quickly find a location.
+    \item \textbf{Navigation Controls:} Help users move and rotate the map view.
+    \item \textbf{Zoom controls:} Allow users to zoom in and out.
+\end{enumerate}
+
+\vspace{1.5em}
+
+% --- Section 2 ---
+\section*{Computer Graphics (CG)}
+
+\begin{center}
+    % "CG image 2" filename with double quotes to support space in filename
+    \includegraphics[width=0.92\linewidth]{"CG image 2"}
+\end{center}
+
+\subsection*{Description:}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item \textbf{3D Mesh Geometry:} Creates the shape and form of buildings and terrain.
+    \item \textbf{Perspective \& Depth:} Creates the feeling of 3D space and distance.
+    \item \textbf{Lightning \& Shadows:} Make the 3D environment look more realistic.
+\end{enumerate}
+
+\vspace{1em}
+
+\subsection*{Reflection:}
+Good 3D graphics, lighting, and depth cues make Google Earth easier to understand and navigate. I would make the navigation controls clearer and easier to find so users can interact with the 3D map more easily.
+
+\end{document}
